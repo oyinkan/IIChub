@@ -1,0 +1,154 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background: #000;
+    color: #fff;
+}
+.container-fluid {
+    width: 94%;
+}
+.topnav {
+    padding: 1.5rem 0;
+}
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+.topnav #navbarLinks {
+    display: none;
+}
+.topnav a {
+    color: #fff;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: block;
+}
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+}
+.active,
+.topnav a:hover {
+    font-weight: bold;
+}
+.impact-wrapper {
+    margin-left: 9rem;
+    margin-top: 3rem;
+}
+.impact-wrapper h1,
+.error-wrapper h1 {
+    font-size: 4.7rem;
+    font-weight: 900;
+}
+.impact-wrapper h1 {
+    width: 60%;
+}
+.impact-wrapper p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+.impact-wrapper hr {
+    float: left;
+    border-color: #fff;
+    width: 10rem;
+    margin-right: 2rem;
+}
+.impact-wrapper a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}
+.dot {
+    width: 26.15px;
+    height: 26.15px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.sayhi {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-left: -1rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    color: #FFF;
+    transform: rotate(-90deg);
+}
+.footer img {
+    height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* About page */
+.impact-wrapper h2 {
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+    text-transform: capitalize;
+    color: #FFF;
+}
+.motivated-wrapper h2 {
+    width: 55%;
+    margin-top: 4rem;
+}
+.mt-40 {
+    margin-top: 4rem;
+}
+.social-links {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.error-wrapper {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    text-align: center;
+}
+.error-wrapper .error {
+    font-size: 28.8rem;
+    line-height: 33.7rem;
+    color: #FFF;
+}
+.mt-10 {
+    margin-top: 1rem;
+}
+.error-wrapper h1 a {
+    color: green;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .impact-wrapper h1 {
+        width: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .error-wrapper h1 {
+        font-size: 4rem;
+    }
+    .error-wrapper .error {
+        font-size: 17.8rem;
+    }
+    .impact-wrapper {
+        margin-left: 3rem;
+    }
+    .impact-wrapper h1,
+    .motivated-wrapper h2 {
+        width: auto;
+    }
+    .logo-image {
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .error-wrapper .error {
+        font-size: 12.8rem;
+    }
+}
