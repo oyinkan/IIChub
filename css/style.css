@@ -175,8 +175,15 @@ h2 {
 
 /* blog */
 .blog-wrapper {
-    background-image: rgba(0, 255, 117, 0.5), url(./../img/background.png);
-    height: 300px;
+    background: url("./../img/background.png") rgba(0, 255, 117, 0.5);
+    background-blend-mode: darken;
+    height: 350px;
+    text-align: center;
+    padding-top: 12rem;
+}
+.blog-wrapper h1 {
+    width: 55%;
+    margin: auto;
 }
 .blog .impact-wrapper {
     margin-left: 0;
