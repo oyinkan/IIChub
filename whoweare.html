@@ -16,12 +16,14 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
   <style>
-    .fa.fa-bars {
+    .fa.fa-bars,
+    .topnav a {
       color: #000;
     }
     #navbarLinks {
-      background: #000;
+      background: #fff;
     }
   </style>
 </head>
@@ -37,10 +39,10 @@
               <img src="img/logo-black.png" class="img-fluid" alt="logo">
             </a>
             <div id="navbarLinks">
-              <a class="active" href="index.html">Home</a>
+              <a href="index.html">Home</a>
               <a href="products.html">Products</a>
-              <a href="whoweare.html">Who We Are</a>
-              <a href="blog.html">Blog</a>
+              <a class="active" href="whoweare.html">Who We Are</a>
+              <a href="programs.html">Programs</a>
               <a href="contact.html">Contact</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -62,7 +64,7 @@
         </div>
         <div class="text-center mt-50">
           <h1>Our Team</h1>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6 col-6">
               <div>
                 <a href=""><img src="img/ifeoluwa.png" class="img-fluid" alt="ifeoluwa"></a>
@@ -88,7 +90,7 @@
                 <a href=""><img src="img/olamide.jpeg" class="img-fluid" alt="ifeoluwa"></a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="text-center mt-50" style="padding-bottom: 5rem;">
           <p>We are a league of highly motivated and inspired minds dedicated to deploying products that addresses painpoints in persons and in communities to market by leveraging on technology and human centred design approach.</p>
@@ -98,10 +100,10 @@
   </div>
   <footer class="footer">
       <div>
-        <p class="sayhi">Say Hi</p>
-        <p><a href="https://www.facebook.com/iichub"><img src="img/facebook.png" class="img-fluid" alt="facebook icon"></a></p>
-        <p><a href="https://www.linkedin.com/company/inspire-innovative-cloud/"><img src="img/linkedin.png" class="img-fluid" alt="linkedin icon"></a></p>
-        <p><a href=""><img src="img/twitter.png" class="img-fluid" alt="twitter icon"></a></p>
+        <p class="sayhi"><a href="contact.html">Say Hi</a></p>
+        <p><a href="https://m.facebook.com/iichub/?ref=bookmarks" target="_blank"><img src="img/facebook.png" class="img-fluid" alt="facebook icon"></a></p>
+        <p><a href="https://www.linkedin.com/mwlite/company/inspire-innovative-cloud" target="_blank"><img src="img/linkedin.png" class="img-fluid" alt="linkedin icon"></a></p>
+        <!-- <p><a href=""><img src="img/twitter.png" class="img-fluid" alt="twitter icon"></a></p> -->
       </div>
     </footer>
   <!-- End your project here-->
@@ -115,16 +117,6 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("navbarLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
+  <script src="js/navbar.js"></script>
 </body>
 </html>

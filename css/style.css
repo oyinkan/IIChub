@@ -2,6 +2,7 @@ html {
     font-size: 62.5%;
 }
 body {
+    font-family: 'Nunito', sans-serif;
     background: #000;
     color: #fff;
 }
@@ -16,6 +17,9 @@ h1 {
 h2 {
     font-size: 3.6rem;
     line-height: 42px;
+}
+header img {
+    margin-left: -15px;
 }
 .topnav {
     padding: 1.5rem 0;
@@ -82,8 +86,10 @@ h2 {
     margin-left: -1rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
-    color: #FFF;
     transform: rotate(-90deg);
+}
+.sayhi a {
+    color: #FFF;
 }
 .footer img {
     height: 1.5rem;
@@ -105,7 +111,7 @@ h2 {
     margin-top: 4rem;
 }
 .social-links {
-    width: 80%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
 }
@@ -163,7 +169,7 @@ h2 {
 }
 .whoweare footer {
     background: #1E2426;
-    padding: 2rem 0;
+    padding: 2rem;
 }
 .whoweare .sayhi {
     transform: none;
@@ -215,12 +221,139 @@ h2 {
     margin-top: 0;
 }
 
+/* programs */
+.sdg {
+    height: 250px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.sdg-details img {
+    width: 100%;
+}
+.one {
+    color: #f5152c;
+}
+.two {
+    color: #e4a309;
+}
+.three {
+    color: #2d9e3d;
+}
+.four {
+    color: #c82030;
+}
+.six {
+    color: #3ab0dc;
+}
+.seven {
+    color: #f9b900;
+}
+.eight {
+    color: #a31135;
+}
+.nine {
+    color: #f66d1e;
+}
+.ten {
+    color: #e01483;
+}
+.eleven {
+    color: #f8a00f;
+}
+.twelve {
+    color: #e48e14;
+}
+.thirteen {
+    color: #1f7837;
+}
+.fourteen {
+    color: #2a7ebf;
+}
+.fifteen {
+    color: #33b23e;
+}
+.sixteen {
+    color: #1b538e;
+}
+.seventeen {
+    color: #1f476b;
+}
+.bold {
+    font-weight: bold;
+}
+.mt-80 {
+    margin-top: 8rem;
+}
+.impact-wrapper .quote {
+    font-size: 36px;
+    line-height: 50px;
+    color: rgba(0, 0, 0, 0.65);
+}
+.impact-wrapper .request {
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.65);
+}
+.btn.btn-info.btn-proceed {
+    border: 1px solid #351969;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    background: transparent!important;
+    color: #351969;
+    padding: 1rem 4rem;
+    margin-left: 6rem;
+    padding-top: 9px;
+    margin-top: 15px;
+}
+.impact-wrapper .business-model {
+    width: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 103px;
+    color: #009DDA;
+}
+.business {
+    color: green;
+}
+.model {
+    color: red;
+}
+.canvas {
+    color: yellow;
+}
+.impact-wrapper .strategy {
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.65);
+    width: 65%;
+    margin: 2rem auto;
+}
+.impact-wrapper .design {
+    width: 60%;
+    margin-bottom: 4rem;
+}
+
+
 @media screen and (max-width: 1000px) {
     .impact-wrapper h1 {
         width: auto;
     }
 }
 @media screen and (max-width: 768px) {
+    .topnav a {
+        padding-left: 0;
+    }
+    header img {
+        margin-left: 0;
+    }
+    .hidden-sm {
+        display: none;
+    }
     .error-wrapper h1 {
         font-size: 4rem;
     }
@@ -231,8 +364,10 @@ h2 {
         margin-left: 3rem;
     }
     .impact-wrapper h1,
-    .motivated-wrapper h2 {
-        width: auto;
+    .motivated-wrapper h2,
+    .impact-wrapper .design,
+    .impact-wrapper p {
+        width: auto!important;
     }
     .logo-image {
         margin-top: 2rem;
@@ -249,9 +384,19 @@ h2 {
         width: 85%;
         padding: 2rem 0;
     }
+    .impact-wrapper .business-model {
+        font-size: 6rem;
+    }
+    .impact-wrapper .quote {
+        font-size: 28px;
+        line-height: 45px;
+    }
 }
 @media screen and (max-width: 400px) {
     .error-wrapper .error {
         font-size: 12.8rem;
+    }
+    .d-flex {
+        display: block!important;
     }
 }
