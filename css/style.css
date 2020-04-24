@@ -3,7 +3,6 @@ html {
 }
 body {
     font-family: 'Nunito', sans-serif;
-    background: #000;
     color: #fff;
 }
 .container-fluid {
@@ -18,22 +17,35 @@ h2 {
     font-size: 3.6rem;
     line-height: 42px;
 }
-header img {
-    margin-left: -15px;
+p,
+ol li {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
 }
-.topnav {
+.navbar {
+    padding: 0;
+    box-shadow: none;
+    --webkit-box-shadow: none;
+}
+.navbar.topnav {
     padding: 1.5rem 0;
 }
 .topnav {
     overflow: hidden;
     position: relative;
 }
+header img {
+    margin-top: 5px;
+}
+#navbarSupportedContent1 {
+    margin-top: 10px;
+}
 .topnav #navbarLinks {
     display: none;
 }
 .topnav a {
-    color: #fff;
-    padding: 1rem 1.5rem;
+    color: #000;
+    /*padding: 1rem 1.5rem;*/
     text-decoration: none;
     font-size: 1.6rem;
     display: block;
@@ -44,13 +56,32 @@ header img {
     right: 0;
     top: 2rem;
 }
+.navbar-toggler .dark-blue-text i {
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    background: #000;
+    padding-top: 9px;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.navbar-toggler.collapsed .fa-times, 
+.navbar-toggler:not(.collapsed) .fa-bars {
+    display:none;
+}
 .active,
 .topnav a:hover {
     font-weight: bold;
 }
+.fa.fa-bars,
+.impact-wrapper h2 {
+    color: #000;
+}
 .impact-wrapper {
     margin-left: 9rem;
     margin-top: 3rem;
+    color: #000;
 }
 .impact-wrapper h1 {
     width: 60%;
@@ -61,15 +92,20 @@ header img {
 }
 .impact-wrapper hr {
     float: left;
-    border-color: #fff;
+    border: 1px solid rgba(46, 212, 122, 0.3);
     width: 10rem;
     margin-right: 2rem;
 }
 .impact-wrapper a {
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: bold;
     text-transform: uppercase;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+}
+#impact-two {
+    display: none;
+    padding-bottom: 4rem;
 }
 .dot {
     width: 26.15px;
@@ -87,6 +123,7 @@ header img {
     margin-bottom: 3rem;
     text-transform: uppercase;
     transform: rotate(-90deg);
+    margin-top: 2rem;
 }
 .sayhi a {
     color: #FFF;
@@ -102,7 +139,7 @@ header img {
     font-size: 3.2rem;
     line-height: 3.7rem;
     text-transform: capitalize;
-    color: #FFF;
+    /*color: #FFF;*/
 }
 .motivated-wrapper h2 {
     margin-top: 4rem;
@@ -167,9 +204,9 @@ header img {
 .mt-50 {
     margin-top: 5rem;
 }
-.whoweare footer {
+.footer {
     background: #1E2426;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 .whoweare .sayhi {
     transform: none;
@@ -338,6 +375,20 @@ header img {
     margin-bottom: 4rem;
 }
 
+/* services page */
+.services-wrapper h1 {
+    margin-bottom: 1.5rem;
+}
+.services-wrapper p.title {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000;
+}
+.mb-70 {
+    margin-bottom: 7rem;
+}
+
 
 @media screen and (max-width: 1000px) {
     .impact-wrapper h1 {
@@ -398,5 +449,13 @@ header img {
     }
     .d-flex {
         display: block!important;
+    }
+    .services-wrapper img {
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .services-wrapper img {
+        margin-top: 1rem;
     }
 }
