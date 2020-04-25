@@ -459,3 +459,12 @@ header img {
         margin-top: 1rem;
     }
 }
+
+
+.design-thinking {
+    color: #593d00;
+    background: #ffe799;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-weight: 600;
+}
