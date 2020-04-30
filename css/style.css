@@ -388,6 +388,31 @@ header img {
 .mb-70 {
     margin-bottom: 7rem;
 }
+.impact-wrapper .carousel p {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 70%;
+    line-height: 2.5rem;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    bottom: auto;
+}
+.carousel-control-prev {
+    right: 180px;
+    left: auto;
+}
+.carousel-control-next {
+    right: 120px;
+}
+.mt-100 {
+    margin-top: 10rem;
+}
+.carousel-control-prev img,
+.carousel-control-next img {
+    height: 5rem;
+}
+
 
 
 @media screen and (max-width: 1000px) {
@@ -441,6 +466,9 @@ header img {
     .impact-wrapper .quote {
         font-size: 28px;
         line-height: 45px;
+    }
+    .carousel-image {
+        margin-top: 7rem;
     }
 }
 @media screen and (max-width: 400px) {
