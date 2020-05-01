@@ -397,6 +397,7 @@ header img {
 .carousel-control-prev,
 .carousel-control-next {
     bottom: auto;
+    opacity: 1;
 }
 .carousel-control-prev {
     right: 180px;
@@ -466,9 +467,6 @@ header img {
     .impact-wrapper .quote {
         font-size: 28px;
         line-height: 45px;
-    }
-    .carousel-image {
-        margin-top: 7rem;
     }
 }
 @media screen and (max-width: 400px) {
